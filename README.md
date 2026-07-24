@@ -1,24 +1,39 @@
-# Priya Kumari Portfolio Website
+# 🌐 Priya Kumari Portfolio Website
 
-A modern, elegant, and responsive personal profile website for **Priya Kumari**, an MCA student and aspiring Software Developer with interests in Python, AI, and web development.
+A modern, elegant, and fully responsive personal portfolio website for **Priya Kumari**, an MCA student and aspiring Software Developer passionate about **Python, Artificial Intelligence, Web Development, and Software Engineering**.
 
-## Screenshot
+---
 
-![Priya Kumari Portfolio Screenshot](assets/portfolio-screenshot.png)
+## 📸 Screenshot
 
-## Features
+<p align="center">
+  <img src="assets/portfolio-screenshot.png"
+       alt="Priya Kumari Portfolio Website Preview"
+       width="900">
+</p>
 
-- Clean white and light blue aesthetic
-- Responsive layout for mobile, tablet, and desktop
-- Smooth scrolling navigation
-- Animated reveal effects on scroll
-- Interactive project cards with detail modal
-- Modern glassmorphism cards
-- Hero section with profile placeholder and portfolio highlights
-- Skills, projects, education timeline, achievements, and contact form
-- SEO-friendly HTML structure
+---
 
-## Sections
+## ✨ Features
+
+- 🎨 Modern white & light blue UI
+- 📱 Fully responsive design (Mobile, Tablet & Desktop)
+- ⚡ Smooth scrolling navigation
+- ✨ Scroll reveal animations
+- 🪟 Interactive project cards with modal popup
+- 🧊 Glassmorphism design elements
+- 👩 Hero section with portfolio highlights
+- 💻 Skills section
+- 🚀 Projects showcase
+- 🎓 Education timeline
+- 🏆 Achievements section
+- 📩 Contact form
+- 🔍 SEO-friendly HTML structure
+- ⚙️ Clean and maintainable code
+
+---
+
+## 📂 Sections
 
 - Home
 - About
@@ -28,35 +43,85 @@ A modern, elegant, and responsive personal profile website for **Priya Kumari**,
 - Achievements
 - Contact
 
-## Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript
 - Google Fonts
-- Font Awesome Icons
+- Font Awesome
 
-## Project Structure
+---
+
+## 📁 Project Structure
 
 ```text
-.
-+-- assets/
-|   +-- portfolio-screenshot.png
-+-- index.html
-+-- script.js
-+-- styles.css
-+-- README.md
+Priya-Portfolio/
+│
+├── assets/
+│   └── portfolio-screenshot.png
+│
+├── index.html
+├── styles.css
+├── script.js
+└── README.md
 ```
 
-## How To View
+---
 
-Open `index.html` in any modern browser.
+## 🚀 Getting Started
 
-## Author
+### 1. Clone the repository
 
-**Priya Kumari**  
-MCA Student | Software Developer | AI & Python Enthusiast
+```bash
+git clone https://github.com/your-username/priya-portfolio.git
+```
 
-## Copyright
+### 2. Navigate to the project folder
 
-(c) 2026 Priya Kumari. All Rights Reserved.
+```bash
+cd priya-portfolio
+```
+
+### 3. Open the project
+
+Simply open **index.html** in your preferred web browser.
+
+No additional installation or dependencies are required.
+
+---
+
+## 💼 Portfolio Highlights
+
+- Responsive Portfolio Design
+- Modern UI/UX
+- Clean Code Architecture
+- Project Showcase
+- Skills Visualization
+- Education Timeline
+- Contact Section
+- Interactive Animations
+
+---
+
+## 👩‍💻 Author
+
+**Priya Kumari**
+
+**MCA Student**  
+**Software Developer**  
+**Python | AI | Web Development Enthusiast**
+
+---
+
+## 📄 License
+
+This project is created for educational and portfolio purposes.
+
+---
+
+## © Copyright
+
+**© 2026 Priya Kumari. All Rights Reserved.**
