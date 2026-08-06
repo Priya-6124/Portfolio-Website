@@ -4,10 +4,16 @@ A modern, elegant, and fully responsive personal portfolio website for **Priya K
 
 ---
 
+## 🌍 Live Demo
+
+🔗 **Portfolio:** https://priya-kumari-portfolio.vercel.app/
+
+---
+
 ## 📸 Screenshot
 
 <p align="center">
-  <img src="assets/portfolio-screenshot.png"
+  <img src="screenshot.jpeg"
        alt="Priya Kumari Portfolio Website Preview"
        width="900">
 </p>
@@ -113,6 +119,8 @@ No additional installation or dependencies are required.
 **MCA Student**  
 **Software Developer**  
 **Python | AI | Web Development Enthusiast**
+
+🌐 **Portfolio:** https://priya-kumari-portfolio.vercel.app/
 
 ---
 
