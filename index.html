@@ -3,232 +3,749 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Priya Kumari - MCA student, aspiring software developer, and AI & Python enthusiast portfolio.">
-  <meta name="keywords" content="Priya Kumari, MCA student, software developer, Python, AI, portfolio, web development">
+  <meta name="description" content="Priya Kumari - MCA Student, Software Developer, Python & AI Enthusiast Portfolio.">
+  <meta name="keywords" content="Priya Kumari, MCA, Software Developer, Python Intern, OpenText, Flask, REST APIs, Bengaluru, Portfolio">
   <meta name="author" content="Priya Kumari">
-  <title>Priya Kumari | Software Developer Portfolio</title>
+  <title>Priya Kumari | Software Developer & MCA Student</title>
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-glow" aria-hidden="true"></div>
+  <!-- Dynamic Background Glows -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
   <header class="site-header">
     <nav class="navbar" aria-label="Primary navigation">
-      <a class="brand" href="#home">Priya Kumari</a>
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <a class="brand" href="#home">
+        <span class="brand-avatar">PK</span>
+        <span class="brand-text">Priya Kumari<span class="brand-dot">.</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Toggle Navigation" aria-expanded="false">
         <i class="fa-solid fa-bars"></i>
       </button>
+
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/Priya-6124" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub Profile">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/priya-kumari-1a32aa327" target="_blank" rel="noopener" class="icon-btn" aria-label="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
     </nav>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section id="home" class="hero section">
       <div class="hero-content reveal">
-        <p class="eyebrow"><i class="fa-solid fa-wand-magic-sparkles"></i> MCA Student & Aspiring Developer</p>
-        <h1>Priya Kumari</h1>
-        <h2>MCA Student | Software Developer | AI & Python Enthusiast</h2>
-        <p class="hero-text">
-          Hello! I'm Priya Kumari, an MCA student passionate about software development, artificial intelligence, and problem solving. I enjoy creating practical applications, learning modern technologies, and continuously improving my programming skills through real-world projects.
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>Open to Software Developer Roles</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Priya Kumari</span>
+        </h1>
+        
+        <h2 class="hero-subtitle">
+          <span class="typing-text">MCA Student & Python Developer</span>
+        </h2>
+        
+        <p class="hero-description">
+          Motivated Master of Computer Applications student at Kristu Jayanti University with hands-on experience in <strong>Python</strong>, <strong>Flask</strong>, <strong>REST APIs</strong>, and <strong>Enterprise Document Management (OpenText)</strong>. Passionate about building scalable software solutions and clean user experiences.
         </p>
+
         <div class="hero-actions">
-          <a class="btn primary" href="#contact"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
-          <a class="btn secondary" href="#projects"><i class="fa-solid fa-code"></i> View Projects</a>
+          <a class="btn primary-btn" href="#contact">
+            <i class="fa-regular fa-paper-plane"></i> Get In Touch
+          </a>
+          <a class="btn secondary-btn" href="#projects">
+            <i class="fa-solid fa-layer-group"></i> View Projects
+          </a>
+          <a class="btn outline-btn" href="https://github.com/Priya-6124" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> GitHub Profile
+          </a>
         </div>
-        <div class="hero-stats" aria-label="Portfolio highlights">
-          <div><strong>4+</strong><span>Projects</span></div>
-          <div><strong>5</strong><span>Skill Areas</span></div>
-          <div><strong>MCA</strong><span>Student</span></div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <strong class="stat-number">2+</strong>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-card">
+            <strong class="stat-number">6+</strong>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <strong class="stat-number">83.8%</strong>
+            <span class="stat-label">MCA Score</span>
+          </div>
+          <div class="stat-card">
+            <strong class="stat-number">5+</strong>
+            <span class="stat-label">Certifications</span>
+          </div>
         </div>
       </div>
-      <div class="profile-wrap reveal">
-        <div class="profile-card">
-          <span class="floating-chip chip-top"><i class="fa-brands fa-python"></i> Python</span>
-          <span class="floating-chip chip-bottom"><i class="fa-solid fa-brain"></i> AI</span>
-          <div class="profile-image" aria-label="Professional profile image placeholder">
-            <i class="fa-regular fa-user"></i>
+
+      <div class="hero-media reveal">
+        <div class="profile-container">
+          <div class="profile-frame">
+            <img src="assets/my_photo.jpeg" alt="Priya Kumari - Software Developer & MCA Student" class="profile-img">
+            <div class="profile-overlay"></div>
           </div>
-          <div>
-            <strong>Open to learning, building, and collaborating</strong>
-            <span>Python &bull; AI &bull; Web Development</span>
+          
+          <!-- Floating tech badges -->
+          <div class="floating-badge badge-1">
+            <i class="fa-brands fa-python"></i>
+            <span>Python & Flask</span>
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fa-solid fa-server"></i>
+            <span>OpenText & REST APIs</span>
+          </div>
+          <div class="floating-badge badge-3">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>MCA @ Kristu Jayanti</span>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">About Me</p>
-        <h2>Curious, consistent, and project-focused.</h2>
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-user"></i> About Me</span>
+        <h2 class="section-title">Driven by Curiosity, Problem Solving & Software Excellence</h2>
       </div>
-      <div class="glass-panel about-panel reveal">
-        <p>
-          I am currently pursuing a Master of Computer Applications and enjoy learning technologies that help me build useful, real-world software. My interests include web applications, Python projects, AI-based solutions, and clean user experiences. I like turning ideas into working applications, improving my technical knowledge step by step, and growing through practical projects, collaboration, and continuous learning.
-        </p>
-        <div class="about-highlights">
-          <span><i class="fa-solid fa-code-branch"></i> Practical projects</span>
-          <span><i class="fa-solid fa-lightbulb"></i> Curious learner</span>
-          <span><i class="fa-solid fa-layer-group"></i> Clean interfaces</span>
+
+      <div class="about-grid reveal">
+        <div class="about-card main-about">
+          <h3>Profile Summary</h3>
+          <p>
+            A motivated and adaptable <strong>Master of Computer Applications (MCA)</strong> student with hands-on experience in Python development, enterprise document management, and full-stack web application development.
+          </p>
+          <p>
+            Equipped with a strong foundation in <strong>Python, Flask, REST APIs, SQL, and Object-Oriented Programming (OOP)</strong> through multiple internships at Whiteband Association and Supai Infotech Ltd. Eager to contribute technical expertise in Agile environments while continuously learning modern software engineering practices.
+          </p>
+          
+          <div class="languages-known">
+            <h4><i class="fa-solid fa-language"></i> Languages Known</h4>
+            <div class="pill-group">
+              <span class="pill-badge"><i class="fa-solid fa-check"></i> English (Proficient)</span>
+              <span class="pill-badge"><i class="fa-solid fa-check"></i> Hindi (Proficient)</span>
+              <span class="pill-badge"><i class="fa-solid fa-check"></i> Kannada (Intermediate)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card highlight-card">
+          <h3><i class="fa-solid fa-bullseye"></i> Key Highlights</h3>
+          <ul class="highlight-list">
+            <li>
+              <div class="hl-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div>
+                <strong>Enterprise Document Management</strong>
+                <span>Experience with OpenText Content Server, LiveReports, WebReports & REST API integration.</span>
+              </div>
+            </li>
+            <li>
+              <div class="hl-icon"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <strong>Python & Full-Stack Development</strong>
+                <span>Building Flask REST APIs, OpenCV face detection, NLP algorithms, and responsive interfaces.</span>
+              </div>
+            </li>
+            <li>
+              <div class="hl-icon"><i class="fa-solid fa-users"></i></div>
+              <div>
+                <strong>Agile & Collaborative Problem Solver</strong>
+                <span>Collaborating across team modules, Postman API testing, and version control using Git.</span>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Skills</p>
-        <h2>Technologies I enjoy working with.</h2>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Experience</span>
+        <h2 class="section-title">Internship Experience</h2>
       </div>
-      <div class="skills-grid">
-        <article class="glass-card reveal">
-          <i class="fa-solid fa-laptop-code"></i>
-          <h3>Programming Languages</h3>
-          <div class="skill-tags"><span>Python</span><span>Java</span><span>C</span><span>JavaScript</span></div>
-        </article>
-        <article class="glass-card reveal">
-          <i class="fa-solid fa-globe"></i>
-          <h3>Web Development</h3>
-          <div class="skill-tags"><span>HTML</span><span>CSS</span><span>React</span><span>Bootstrap</span></div>
-        </article>
-        <article class="glass-card reveal">
-          <i class="fa-solid fa-database"></i>
-          <h3>Database</h3>
-          <div class="skill-tags"><span>MySQL</span><span>MongoDB</span></div>
-        </article>
-        <article class="glass-card reveal">
-          <i class="fa-solid fa-screwdriver-wrench"></i>
-          <h3>Tools</h3>
-          <div class="skill-tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Postman</span></div>
-        </article>
-        <article class="glass-card reveal">
-          <i class="fa-solid fa-people-group"></i>
-          <h3>Other Skills</h3>
-          <div class="skill-tags"><span>Problem Solving</span><span>Teamwork</span><span>Communication</span><span>AI Tools</span></div>
-        </article>
+
+      <div class="experience-timeline reveal">
+        <!-- Internship 1 -->
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-company-logo"><i class="fa-brands fa-python"></i></div>
+            <div class="exp-title-box">
+              <h3>Python Intern</h3>
+              <p class="exp-company">Whiteband Association</p>
+            </div>
+            <span class="exp-date"><i class="fa-regular fa-calendar"></i> June 2026</span>
+          </div>
+          <ul class="exp-duties">
+            <li>Developed a menu-driven <strong>Employee Management System</strong> using Python, Object-Oriented Programming, and file handling to manage over <strong>500+ employee records</strong>.</li>
+            <li>Built a <strong>Smart File Organizer</strong> capable of organizing <strong>1000+ files</strong> across multiple directories, reducing manual sorting time by <strong>80%</strong>.</li>
+            <li>Designed and implemented <strong>15+ reusable Python classes and modules</strong> following Object-Oriented Programming principles, improving code maintainability and reducing duplication.</li>
+          </ul>
+          <div class="exp-tech-stack">
+            <span>Python</span>
+            <span>OOP</span>
+            <span>File Handling</span>
+            <span>Scripting</span>
+            <span>Automation</span>
+          </div>
+        </div>
+
+        <!-- Internship 2 -->
+        <div class="exp-card">
+          <div class="exp-header">
+            <div class="exp-company-logo"><i class="fa-solid fa-building"></i></div>
+            <div class="exp-title-box">
+              <h3>Software Developer Intern</h3>
+              <p class="exp-company">Supai Infotech Ltd</p>
+            </div>
+            <span class="exp-date"><i class="fa-regular fa-calendar"></i> Jul 2025 – Jan 2026</span>
+          </div>
+          <ul class="exp-duties">
+            <li>Worked on enterprise document management solutions using <strong>OpenText Content Server</strong>.</li>
+            <li>Developed front-end interfaces using <strong>HTML, CSS, and JavaScript</strong> for seamless document interactions.</li>
+            <li>Integrated <strong>OpenText REST APIs</strong> for document retrieval, metadata management, search, preview, and version control.</li>
+            <li>Gained hands-on experience with OpenText Content Management, <strong>LiveReports</strong>, <strong>WebReports</strong>, and <strong>Workflow Automation</strong>.</li>
+            <li>Collaborated in Agile development workflows and performed API testing using <strong>Postman</strong>.</li>
+          </ul>
+          <div class="exp-tech-stack">
+            <span>OpenText Content Server</span>
+            <span>REST APIs</span>
+            <span>JavaScript</span>
+            <span>HTML5/CSS3</span>
+            <span>Postman</span>
+            <span>Agile</span>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Projects</p>
-        <h2>Practical work with real use cases.</h2>
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Projects</span>
+        <h2 class="section-title">Real-World Software & Web Solutions</h2>
+        <p class="section-subtitle">Connected directly to GitHub account: <a href="https://github.com/Priya-6124" target="_blank" rel="noopener" class="highlight-link">github.com/Priya-6124</a></p>
       </div>
-      <div class="projects-grid">
-        <article class="project-card reveal" tabindex="0" data-project="Job Sentinel" data-details="AI-powered job scam detection platform designed to help job seekers check suspicious job posts and reduce the risk of fraud.">
-          <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h3>Job Sentinel</h3>
-          <p>An AI-powered job scam detection platform that helps users identify fraudulent job postings.</p>
-          <button type="button" class="project-link">View details <i class="fa-solid fa-arrow-right"></i></button>
+
+      <!-- Project Filter -->
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="python-ai">Python & AI</button>
+        <button class="filter-btn" data-filter="web-3d">Web & 3D</button>
+        <button class="filter-btn" data-filter="enterprise">Enterprise</button>
+      </div>
+
+      <div class="projects-grid reveal">
+        <!-- Project 1 -->
+        <article class="project-card" data-category="web-3d">
+          <div class="project-banner">
+            <div class="project-category-badge"><i class="fa-solid fa-cube"></i> Devpost Hackathon</div>
+            <i class="fa-solid fa-vr-cardboard project-icon"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Living Echoes of Ancient Wisdom</h3>
+            <p class="project-desc">Immersive 3D storytelling website built with interactive animations, realistic 3D effects, and smooth scrolling responsiveness.</p>
+            <div class="project-tech">
+              <span>React</span>
+              <span>Three.js</span>
+              <span>JavaScript</span>
+              <span>Web Development</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn card-btn open-modal-btn" data-project="Living Echoes of Ancient Wisdom" data-tech="React, Three.js, JavaScript" data-details="Developed an immersive 3D storytelling website with interactive animations, realistic 3D effects, smooth scrolling, and responsive design. Built as part of the Devpost 3D Website Hackathon." data-github="https://github.com/Priya-6124" data-demo="https://living-echoes-3-d-historical-mythol.vercel.app/">
+                <i class="fa-solid fa-circle-info"></i> Details
+              </button>
+              <a href="https://living-echoes-3-d-historical-mythol.vercel.app/" target="_blank" rel="noopener" class="btn card-btn primary-card-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/Priya-6124" target="_blank" rel="noopener" class="btn card-btn icon-only-btn" title="View GitHub Repository" aria-label="GitHub Repository">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
         </article>
-        <article class="project-card reveal" tabindex="0" data-project="FaceID Attendance Tracker" data-details="Facial recognition attendance system focused on faster attendance capture, cleaner records, and a smoother classroom workflow.">
-          <div class="project-icon"><i class="fa-solid fa-face-smile"></i></div>
-          <h3>FaceID Attendance Tracker</h3>
-          <p>A facial recognition attendance management system for smarter and faster attendance workflows.</p>
-          <button type="button" class="project-link">View details <i class="fa-solid fa-arrow-right"></i></button>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="python-ai">
+          <div class="project-banner">
+            <div class="project-category-badge"><i class="fa-solid fa-camera"></i> Computer Vision</div>
+            <i class="fa-solid fa-face-smile project-icon"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">FaceID Attendance Tracker</h3>
+            <p class="project-desc">Facial recognition-based attendance management system with real-time face detection, REST API integration, and MySQL database.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>OpenCV</span>
+              <span>MySQL</span>
+              <span>REST APIs</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn card-btn open-modal-btn" data-project="FaceID Attendance Tracker" data-tech="Python, Flask, OpenCV, MySQL" data-details="Developed a facial recognition-based attendance management system featuring real-time face detection, automated attendance recording, REST APIs integration, and MySQL database management." data-github="https://github.com/Priya-6124">
+                <i class="fa-solid fa-circle-info"></i> Details
+              </button>
+              <a href="https://github.com/Priya-6124" target="_blank" rel="noopener" class="btn card-btn primary-card-btn">
+                <i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
         </article>
-        <article class="project-card reveal" tabindex="0" data-project="Document Management Dashboard" data-details="Document dashboard concept integrated with OpenText Content Server APIs to organize, search, and manage documents efficiently.">
-          <div class="project-icon"><i class="fa-regular fa-folder-open"></i></div>
-          <h3>Document Management Dashboard</h3>
-          <p>A dashboard integrated with OpenText Content Server APIs for document management.</p>
-          <button type="button" class="project-link">View details <i class="fa-solid fa-arrow-right"></i></button>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="python-ai">
+          <div class="project-banner">
+            <div class="project-category-badge"><i class="fa-solid fa-robot"></i> AI & NLP</div>
+            <i class="fa-solid fa-shield-halved project-icon"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">JobSentinel</h3>
+            <p class="project-desc">AI-powered job scam detection web application built to analyze fraudulent listings using NLP, REST APIs, and a Flask backend.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>Flask</span>
+              <span>MySQL</span>
+              <span>NLP</span>
+              <span>REST APIs</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn card-btn open-modal-btn" data-project="JobSentinel" data-tech="Python, Flask, MySQL, NLP" data-details="Developed an AI-powered job scam detection web application. Built REST APIs for fraud detection and reporting, and integrated Flask backend with a modern responsive frontend." data-github="https://github.com/Priya-6124">
+                <i class="fa-solid fa-circle-info"></i> Details
+              </button>
+              <a href="https://github.com/Priya-6124" target="_blank" rel="noopener" class="btn card-btn primary-card-btn">
+                <i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
         </article>
-        <article class="project-card reveal" tabindex="0" data-project="Smart File Organizer" data-details="Python utility that scans files and automatically sorts them into folders by file type, making local storage easier to manage.">
-          <div class="project-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-          <h3>Smart File Organizer</h3>
-          <p>A Python application that automatically organizes files into folders based on their file types.</p>
-          <button type="button" class="project-link">View details <i class="fa-solid fa-arrow-right"></i></button>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-category="enterprise">
+          <div class="project-banner">
+            <div class="project-category-badge"><i class="fa-solid fa-database"></i> OpenText EDM</div>
+            <i class="fa-solid fa-file-contract project-icon"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Enterprise Document Management Dashboard</h3>
+            <p class="project-desc">Interactive dashboard integrated with OpenText REST APIs featuring document search, metadata viewing, live preview, and export.</p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>REST APIs</span>
+              <span>OpenText</span>
+              <span>HTML5/CSS3</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn card-btn open-modal-btn" data-project="Enterprise Document Management Dashboard" data-tech="JavaScript, REST APIs, OpenText Content Server" data-details="Developed a document management dashboard using OpenText REST APIs. Implemented document search, metadata, preview, and download features with responsive UI, filtering, and export functionality." data-github="https://github.com/Priya-6124">
+                <i class="fa-solid fa-circle-info"></i> Details
+              </button>
+              <a href="https://github.com/Priya-6124" target="_blank" rel="noopener" class="btn card-btn primary-card-btn">
+                <i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-category="python-ai">
+          <div class="project-banner">
+            <div class="project-category-badge"><i class="fa-solid fa-folder-tree"></i> Automation Utility</div>
+            <i class="fa-solid fa-wand-magic-sparkles project-icon"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Smart File Organizer</h3>
+            <p class="project-desc">Automated Python application that organizes 1000+ files into sorted directories based on extension type, reducing manual effort by 80%.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>OOP</span>
+              <span>File Handling</span>
+              <span>OS Scripting</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn card-btn open-modal-btn" data-project="Smart File Organizer" data-tech="Python, OOP" data-details="Developed a Python application to organize files automatically across multiple directories. Implemented object-oriented design and file handling, reducing manual file organization effort by 80%." data-github="https://github.com/Priya-6124">
+                <i class="fa-solid fa-circle-info"></i> Details
+              </button>
+              <a href="https://github.com/Priya-6124" target="_blank" rel="noopener" class="btn card-btn primary-card-btn">
+                <i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card" data-category="python-ai">
+          <div class="project-banner">
+            <div class="project-category-badge"><i class="fa-solid fa-users-gear"></i> Management App</div>
+            <i class="fa-solid fa-id-card project-icon"></i>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Employee Management System</h3>
+            <p class="project-desc">Menu-driven application built using OOP concepts and file storage handling 500+ employee records with full CRUD operations.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>OOP</span>
+              <span>CRUD Operations</span>
+              <span>File Storage</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn card-btn open-modal-btn" data-project="Employee Management System" data-tech="Python, OOP, File Handling" data-details="Developed a menu-driven employee management application supporting full CRUD operations, using file handling to manage over 500+ employee records with reusable OOP modules." data-github="https://github.com/Priya-6124">
+                <i class="fa-solid fa-circle-info"></i> Details
+              </button>
+              <a href="https://github.com/Priya-6124" target="_blank" rel="noopener" class="btn card-btn primary-card-btn">
+                <i class="fa-brands fa-github"></i> GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-screwdriver-wrench"></i> Technical Stack</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+      </div>
+
+      <div class="skills-grid reveal">
+        <!-- Category 1 -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="chip"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="chip"><i class="fa-solid fa-file-code"></i> C</span>
+          </div>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>Web & Frameworks</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="chip"><i class="fa-solid fa-pepper-hot"></i> Flask</span>
+            <span class="chip"><i class="fa-solid fa-eye"></i> OpenCV</span>
+            <span class="chip"><i class="fa-solid fa-network-wired"></i> REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fa-solid fa-database"></i></div>
+            <h3>Databases & Cloud</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="chip"><i class="fa-solid fa-server"></i> MySQL</span>
+            <span class="chip"><i class="fa-brands fa-aws"></i> AWS</span>
+            <span class="chip"><i class="fa-brands fa-microsoft"></i> Microsoft Azure</span>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fa-solid fa-toolbox"></i></div>
+            <h3>Tools & Analytics</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+            <span class="chip"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="chip"><i class="fa-solid fa-code"></i> VS Code</span>
+            <span class="chip"><i class="fa-solid fa-paper-plane"></i> Postman</span>
+            <span class="chip"><i class="fa-solid fa-chart-column"></i> Power BI</span>
+            <span class="chip"><i class="fa-solid fa-diagram-project"></i> OpenText</span>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="skill-category-card full-width">
+          <div class="cat-header">
+            <div class="cat-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>Soft Skills & Competencies</h3>
+          </div>
+          <div class="skill-chips">
+            <span class="chip accent-chip"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+            <span class="chip accent-chip"><i class="fa-solid fa-comments"></i> Communication</span>
+            <span class="chip accent-chip"><i class="fa-solid fa-users"></i> Teamwork</span>
+            <span class="chip accent-chip"><i class="fa-solid fa-rotate"></i> Adaptability</span>
+            <span class="chip accent-chip"><i class="fa-solid fa-chart-line"></i> Analytical Thinking</span>
+            <span class="chip accent-chip"><i class="fa-solid fa-clock"></i> Time Management</span>
+            <span class="chip accent-chip"><i class="fa-solid fa-user-astronaut"></i> Leadership</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
     <section id="education" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Education</p>
-        <h2>Academic journey.</h2>
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</span>
+        <h2 class="section-title">Education</h2>
       </div>
-      <div class="timeline reveal">
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-content">
-            <h3>Master of Computer Applications (MCA)</h3>
-            <p>Focused on advanced computing concepts, software development, databases, web technologies, and practical programming skills.</p>
-          </div>
+
+      <div class="education-grid reveal">
+        <!-- MCA -->
+        <div class="edu-card">
+          <div class="edu-badge"><i class="fa-solid fa-award"></i> 83.84%</div>
+          <span class="edu-year">2025 – 2027</span>
+          <h3 class="edu-degree">Master of Computer Applications (MCA)</h3>
+          <p class="edu-inst">Kristu Jayanti (Deemed to be University)</p>
+          <p class="edu-desc">Advanced software development, AI & ML, enterprise system architecture, database management, and web frameworks.</p>
         </div>
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div class="timeline-content">
-            <h3>Bachelor's Degree</h3>
-            <p>Built a strong academic foundation in computer fundamentals, logical thinking, and technology-driven problem solving.</p>
-          </div>
+
+        <!-- BCA -->
+        <div class="edu-card">
+          <div class="edu-badge"><i class="fa-solid fa-star"></i> 9.28 CGPA</div>
+          <span class="edu-year">2022 – 2025</span>
+          <h3 class="edu-degree">Bachelor of Computer Applications (BCA)</h3>
+          <p class="edu-inst">Ebenezer Degree College</p>
+          <p class="edu-desc">Comprehensive foundation in computer applications, programming, data structures, algorithms, and web applications.</p>
+        </div>
+
+        <!-- Class XII -->
+        <div class="edu-card">
+          <div class="edu-badge"><i class="fa-solid fa-check"></i> 71.33%</div>
+          <span class="edu-year">2020 – 2022</span>
+          <h3 class="edu-degree">Class XII (PCMB)</h3>
+          <p class="edu-inst">VBR PU College</p>
+          <p class="edu-desc">Physics, Chemistry, Mathematics, and Biology with focus on analytical problem solving.</p>
+        </div>
+
+        <!-- Class X -->
+        <div class="edu-card">
+          <div class="edu-badge"><i class="fa-solid fa-trophy"></i> 91.84%</div>
+          <span class="edu-year">2018 – 2020</span>
+          <h3 class="edu-degree">Class X</h3>
+          <p class="edu-inst">Good Year English High School</p>
+          <p class="edu-desc">Secondary education with academic distinction and active participation in science competitions.</p>
         </div>
       </div>
     </section>
 
-    <section id="achievements" class="section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Achievements</p>
-        <h2>Small wins that keep me growing.</h2>
+    <!-- Certifications & Achievements Section -->
+    <section id="certifications" class="section">
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-solid fa-certificate"></i> Accomplishments</span>
+        <h2 class="section-title">Certifications & Achievements</h2>
       </div>
-      <div class="achievement-grid">
-        <article class="glass-card reveal"><i class="fa-solid fa-briefcase"></i><h3>Internship Projects</h3></article>
-        <article class="glass-card reveal"><i class="fa-solid fa-robot"></i><h3>AI Website Development</h3></article>
-        <article class="glass-card reveal"><i class="fa-brands fa-python"></i><h3>Python Projects</h3></article>
-        <article class="glass-card reveal"><i class="fa-brands fa-github"></i><h3>GitHub Portfolio</h3></article>
+
+      <div class="cert-achieve-grid reveal">
+        <!-- Certifications Panel -->
+        <div class="cert-panel">
+          <h3><i class="fa-solid fa-ribbon"></i> Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <i class="fa-brands fa-microsoft cert-icon"></i>
+              <div>
+                <strong>Microsoft Azure Fundamentals</strong>
+                <span>Cloud Computing & Azure Services</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-laptop-code cert-icon"></i>
+              <div>
+                <strong>Java Fundamentals</strong>
+                <span>Infosys Springboard</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-chart-pie cert-icon"></i>
+              <div>
+                <strong>Microsoft Power BI</strong>
+                <span>Business Intelligence & Visual Analytics</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-chart-line cert-icon"></i>
+              <div>
+                <strong>Data Analytics</strong>
+                <span>Qlik Learning</span>
+              </div>
+            </div>
+            <div class="cert-item">
+              <i class="fa-solid fa-brain cert-icon"></i>
+              <div>
+                <strong>Introduction to Machine Learning</strong>
+                <span>NPTEL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements & Extra-Curricular Panel -->
+        <div class="cert-panel">
+          <h3><i class="fa-solid fa-trophy"></i> Participations & Achievements</h3>
+          <ul class="achieve-list">
+            <li>
+              <i class="fa-solid fa-user-tie"></i>
+              <div>
+                <strong>CEO Conclave Participant</strong>
+                <span>Interacted with industry leaders; gained insights on entrepreneurship, leadership, & emerging tech trends.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa-brands fa-python"></i>
+              <div>
+                <strong>Naukri Python for Data Contest</strong>
+                <span>Demonstrated expertise in Python programming and data analysis techniques.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-cube"></i>
+              <div>
+                <strong>Devpost 3D Website Hackathon</strong>
+                <span>Contributed to an immersive 3D web application using React and Three.js.</span>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-hand-holding-heart"></i>
+              <div>
+                <strong>Social Initiative & Volunteering</strong>
+                <span>Volunteer for "Shells, Scientific Exploration" & AWS Pathway to Internship Excellence Workshop participant.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="section contact-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Contact</p>
-        <h2>Let's connect and build something useful.</h2>
+      <div class="section-header reveal">
+        <span class="section-tag"><i class="fa-regular fa-paper-plane"></i> Contact</span>
+        <h2 class="section-title">Let's Connect & Build Together</h2>
+        <p class="section-subtitle">Interested in collaborating or hiring? Reach out anytime!</p>
       </div>
-      <div class="contact-layout">
-        <div class="contact-info reveal">
-          <a href="mailto:your-email@example.com"><i class="fa-regular fa-envelope"></i> your-email@example.com</a>
-          <a href="tel:+91XXXXXXXXXX"><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</a>
-          <span><i class="fa-solid fa-location-dot"></i> India</span>
+
+      <div class="contact-layout reveal">
+        <!-- Contact Cards -->
+        <div class="contact-info-wrapper">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+919620184288" class="contact-val">+91 9620184288</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:25mcab38@kristujayanti.com" class="contact-val">25mcab38@kristujayanti.com</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/priya-kumari-1a32aa327" target="_blank" rel="noopener" class="contact-val">priya-kumari-1a32aa327</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <a href="https://github.com/Priya-6124" target="_blank" rel="noopener" class="contact-val">github.com/Priya-6124</a>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-val">Bengaluru, Karnataka, India</span>
+            </div>
+          </div>
         </div>
-        <form class="contact-form reveal">
-          <label>
-            <span>Name</span>
-            <input type="text" name="name" placeholder="Your name" required>
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" placeholder="Your email" required>
-          </label>
-          <label>
-            <span>Message</span>
-            <textarea name="message" rows="5" placeholder="Write your message" required></textarea>
-          </label>
-          <button class="btn primary" type="submit"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
-        </form>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 Priya Kumari. All Rights Reserved.</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2026 Priya Kumari. All rights reserved.</p>
+      <p class="footer-sub">Built with Passion, HTML5, CSS3, & JavaScript | MCA @ Kristu Jayanti</p>
+    </div>
   </footer>
 
-  <div class="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <!-- Project Details Modal -->
+  <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
     <div class="modal-card">
-      <button class="modal-close" type="button" aria-label="Close project details"><i class="fa-solid fa-xmark"></i></button>
-      <p class="eyebrow">Project Detail</p>
-      <h2 id="modal-title">Project</h2>
-      <p id="modal-text"></p>
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <span class="section-tag" id="modal-tech-tag">Tech Stack</span>
+        <h2 id="modal-title">Project Title</h2>
+      </div>
+      <div class="modal-body">
+        <p id="modal-text">Project description will appear here...</p>
+      </div>
+      <div class="modal-footer" id="modal-footer">
+        <a id="modal-demo-btn" href="#" target="_blank" rel="noopener" class="btn primary-btn" style="display: none;">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+        </a>
+        <a id="modal-github-link" href="https://github.com/Priya-6124" target="_blank" rel="noopener" class="btn secondary-btn">
+          <i class="fa-brands fa-github"></i> GitHub Repository
+        </a>
+      </div>
     </div>
   </div>
 
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
