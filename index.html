@@ -64,10 +64,11 @@
     <!-- Hero Section -->
     <section id="home" class="hero section">
       <div class="hero-content reveal">
-        <div class="status-badge">
+        <button type="button" class="status-badge-btn open-send-msg-btn" id="open-send-msg-top-btn">
           <span class="pulse-dot"></span>
-          <span>Open to Software Developer Roles</span>
-        </div>
+          <span>Open to Roles</span>
+          <i class="fa-solid fa-paper-plane badge-arrow"></i>
+        </button>
         
         <h1 class="hero-title">
           Hi, I'm <span class="gradient-text">Priya Kumari</span>
@@ -82,9 +83,9 @@
         </p>
 
         <div class="hero-actions">
-          <a class="btn primary-btn" href="#contact">
-            <i class="fa-regular fa-paper-plane"></i> Get In Touch
-          </a>
+          <button type="button" class="btn primary-btn open-send-msg-btn">
+            <i class="fa-regular fa-paper-plane"></i> Send Me a Message
+          </button>
           <a class="btn secondary-btn" href="#projects">
             <i class="fa-solid fa-layer-group"></i> View Projects
           </a>
@@ -201,7 +202,7 @@
       </div>
 
       <div class="experience-timeline reveal">
-        <!-- Internship 1 -->
+        <!-- Internship 1: Whiteband Association -->
         <div class="exp-card">
           <div class="exp-header">
             <div class="exp-company-logo"><i class="fa-brands fa-python"></i></div>
@@ -223,9 +224,14 @@
             <span>Scripting</span>
             <span>Automation</span>
           </div>
+          <div class="exp-cert-action">
+            <button class="btn card-btn secondary-btn open-cert-modal-btn" data-title="Whiteband Association Python Internship Certificate" data-issuer="Whiteband Association" data-id="WHITEBAND-PY-2026" data-date="June 2026" data-img="assets/Whiteband_Internship_preview.png">
+              <i class="fa-solid fa-certificate"></i> View Internship Certificate
+            </button>
+          </div>
         </div>
 
-        <!-- Internship 2 -->
+        <!-- Internship 2: Supai Infotech Ltd -->
         <div class="exp-card">
           <div class="exp-header">
             <div class="exp-company-logo"><i class="fa-solid fa-building"></i></div>
@@ -249,6 +255,11 @@
             <span>HTML5/CSS3</span>
             <span>Postman</span>
             <span>Agile</span>
+          </div>
+          <div class="exp-cert-action">
+            <button class="btn card-btn primary-card-btn open-cert-modal-btn" data-title="Supai Infotech Software Developer Internship Certificate" data-issuer="Supai Infotech Ltd / OpenText EDM" data-id="SUPAI-INT-2026" data-date="Jul 2025 – Jan 2026" data-img="assets/Supai_Internship_preview.jpeg">
+              <i class="fa-solid fa-certificate"></i> View Internship Certificate
+            </button>
           </div>
         </div>
       </div>
@@ -569,86 +580,190 @@
     <!-- Certifications & Achievements Section -->
     <section id="certifications" class="section">
       <div class="section-header reveal">
-        <span class="section-tag"><i class="fa-solid fa-certificate"></i> Accomplishments</span>
+        <span class="section-tag"><i class="fa-solid fa-certificate"></i> Verified Credentials</span>
         <h2 class="section-title">Certifications & Achievements</h2>
+        <p class="section-subtitle">Click any certificate card below to view the official document in full detail.</p>
       </div>
 
-      <div class="cert-achieve-grid reveal">
-        <!-- Certifications Panel -->
-        <div class="cert-panel">
-          <h3><i class="fa-solid fa-ribbon"></i> Certifications</h3>
-          <div class="cert-list">
-            <div class="cert-item">
-              <i class="fa-brands fa-microsoft cert-icon"></i>
-              <div>
-                <strong>Microsoft Azure Fundamentals</strong>
-                <span>Cloud Computing & Azure Services</span>
-              </div>
+      <!-- Certifications Interactive Gallery Grid -->
+      <div class="cert-gallery-grid reveal">
+        <!-- Cert 1: Whiteband Python Internship -->
+        <article class="cert-card open-cert-modal-btn" data-title="Whiteband Association Python Internship Certificate" data-issuer="Whiteband Association" data-id="WHITEBAND-PY-2026" data-date="June 2026" data-img="assets/Whiteband_Internship_preview.png">
+          <div class="cert-thumb-box">
+            <img src="assets/Whiteband_Internship_preview.png" alt="Whiteband Python Internship Certificate" class="cert-thumb">
+            <div class="cert-thumb-overlay">
+              <span class="view-cert-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
             </div>
-            <div class="cert-item">
-              <i class="fa-solid fa-laptop-code cert-icon"></i>
-              <div>
-                <strong>Java Fundamentals</strong>
-                <span>Infosys Springboard</span>
-              </div>
+            <div class="cert-badge emerald-badge"><i class="fa-solid fa-briefcase"></i> Internship</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Whiteband Python Internship Certificate</h3>
+            <div class="cert-id-tag">
+              <i class="fa-solid fa-key"></i> ID: <span>WHITEBAND-PY-2026</span>
             </div>
-            <div class="cert-item">
-              <i class="fa-solid fa-chart-pie cert-icon"></i>
-              <div>
-                <strong>Microsoft Power BI</strong>
-                <span>Business Intelligence & Visual Analytics</span>
-              </div>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> June 2026</p>
+          </div>
+        </article>
+
+        <!-- Cert 2: Supai Infotech Internship -->
+        <article class="cert-card open-cert-modal-btn" data-title="Supai Infotech Software Developer Internship Certificate" data-issuer="Supai Infotech Ltd / OpenText EDM" data-id="SUPAI-INT-2026" data-date="Jul 2025 – Jan 2026" data-img="assets/Supai_Internship_preview.jpeg">
+          <div class="cert-thumb-box">
+            <img src="assets/Supai_Internship_preview.jpeg" alt="Supai Infotech Internship Certificate" class="cert-thumb">
+            <div class="cert-thumb-overlay">
+              <span class="view-cert-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
             </div>
-            <div class="cert-item">
-              <i class="fa-solid fa-chart-line cert-icon"></i>
-              <div>
-                <strong>Data Analytics</strong>
-                <span>Qlik Learning</span>
-              </div>
+            <div class="cert-badge emerald-badge"><i class="fa-solid fa-building"></i> Internship</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Supai Infotech Internship Certificate</h3>
+            <div class="cert-id-tag">
+              <i class="fa-solid fa-key"></i> ID: <span>SUPAI-INT-2026</span>
             </div>
-            <div class="cert-item">
-              <i class="fa-solid fa-brain cert-icon"></i>
-              <div>
-                <strong>Introduction to Machine Learning</strong>
-                <span>NPTEL</span>
-              </div>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Jul 2025 – Jan 2026</p>
+          </div>
+        </article>
+
+        <!-- Cert 3: Azure Fundamentals -->
+        <article class="cert-card open-cert-modal-btn" data-title="Microsoft Azure Fundamentals" data-issuer="Microsoft / Certiport" data-id="CJbw-Dw8X" data-date="September 29, 2025" data-img="assets/25MCAB38_Azure_Fundamentals_preview.png">
+          <div class="cert-thumb-box">
+            <img src="assets/25MCAB38_Azure_Fundamentals_preview.png" alt="Microsoft Azure Fundamentals Certificate" class="cert-thumb">
+            <div class="cert-thumb-overlay">
+              <span class="view-cert-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+            </div>
+            <div class="cert-badge"><i class="fa-brands fa-microsoft"></i> Microsoft</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Microsoft Azure Fundamentals</h3>
+            <div class="cert-id-tag">
+              <i class="fa-solid fa-key"></i> ID: <span>CJbw-Dw8X</span>
+            </div>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Sept 29, 2025</p>
+          </div>
+        </article>
+
+        <!-- Cert 4: Power Platform Fundamentals -->
+        <article class="cert-card open-cert-modal-btn" data-title="Microsoft Power Platform Fundamentals" data-issuer="Microsoft / Certiport" data-id="waQWr-H9EC" data-date="March 17, 2026" data-img="assets/Power_Platform_Fundamentals_preview.png">
+          <div class="cert-thumb-box">
+            <img src="assets/Power_Platform_Fundamentals_preview.png" alt="Microsoft Power Platform Fundamentals Certificate" class="cert-thumb">
+            <div class="cert-thumb-overlay">
+              <span class="view-cert-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+            </div>
+            <div class="cert-badge"><i class="fa-brands fa-microsoft"></i> Microsoft</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Power Platform Fundamentals</h3>
+            <div class="cert-id-tag">
+              <i class="fa-solid fa-key"></i> ID: <span>waQWr-H9EC</span>
+            </div>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Mar 17, 2026</p>
+          </div>
+        </article>
+
+        <!-- Cert 5: NPTEL Machine Learning -->
+        <article class="cert-card open-cert-modal-btn" data-title="Introduction to Machine Learning" data-issuer="NPTEL / IIT (4 Credits)" data-id="NPTEL26CS74S750201974" data-date="Jan - Apr 2026" data-img="assets/NPTEL_Machine_Learning_preview.png">
+          <div class="cert-thumb-box">
+            <img src="assets/NPTEL_Machine_Learning_preview.png" alt="NPTEL Machine Learning Certificate" class="cert-thumb">
+            <div class="cert-thumb-overlay">
+              <span class="view-cert-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+            </div>
+            <div class="cert-badge accent-badge"><i class="fa-solid fa-graduation-cap"></i> NPTEL / IIT</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Introduction to Machine Learning</h3>
+            <div class="cert-id-tag">
+              <i class="fa-solid fa-key"></i> ID: <span>NPTEL26CS74S750201974</span>
+            </div>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Jan - Apr 2026</p>
+          </div>
+        </article>
+
+        <!-- Cert 6: Qlik Data Analytics -->
+        <article class="cert-card open-cert-modal-btn" data-title="Qlik Data Analytics Certification" data-issuer="Qlik Learning (Score: 82)" data-id="397952727" data-date="December 15, 2025" data-img="assets/Qlik_Data_Analytics_preview.png">
+          <div class="cert-thumb-box">
+            <img src="assets/Qlik_Data_Analytics_preview.png" alt="Qlik Data Analytics Certificate" class="cert-thumb">
+            <div class="cert-thumb-overlay">
+              <span class="view-cert-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+            </div>
+            <div class="cert-badge cyan-badge"><i class="fa-solid fa-chart-pie"></i> Qlik</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Data Analytics Certification</h3>
+            <div class="cert-id-tag">
+              <i class="fa-solid fa-key"></i> ID: <span>397952727</span>
+            </div>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Dec 15, 2025</p>
+          </div>
+        </article>
+
+        <!-- Cert 7: Java Fundamentals -->
+        <article class="cert-card open-cert-modal-btn" data-title="Java Programming Fundamentals" data-issuer="Infosys Springboard" data-id="verify.onwingspan.com" data-date="October 5, 2025" data-img="assets/25MCAB38_Java_Certificate_preview.png">
+          <div class="cert-thumb-box">
+            <img src="assets/25MCAB38_Java_Certificate_preview.png" alt="Java Programming Fundamentals Certificate" class="cert-thumb">
+            <div class="cert-thumb-overlay">
+              <span class="view-cert-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+            </div>
+            <div class="cert-badge"><i class="fa-brands fa-java"></i> Infosys</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Java Programming Fundamentals</h3>
+            <div class="cert-id-tag">
+              <i class="fa-solid fa-key"></i> ID: <span>verify.onwingspan.com</span>
+            </div>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Oct 5, 2025</p>
+          </div>
+        </article>
+
+        <!-- Cert 8: Data Analytics Certificate -->
+        <article class="cert-card open-cert-modal-btn" data-title="Data Analytics Certificate" data-issuer="Data Analytics" data-id="4w6J-XaAR" data-date="March 16, 2026" data-img="assets/Data_Analytics_preview.png">
+          <div class="cert-thumb-box">
+            <img src="assets/Data_Analytics_preview.png" alt="Data Analytics Certificate" class="cert-thumb">
+            <div class="cert-thumb-overlay">
+              <span class="view-cert-btn"><i class="fa-solid fa-expand"></i> View Certificate</span>
+            </div>
+            <div class="cert-badge cyan-badge"><i class="fa-solid fa-chart-line"></i> Analytics</div>
+          </div>
+          <div class="cert-info">
+            <h3 class="cert-name">Data Analytics Certificate</h3>
+            <div class="cert-id-tag">
+              <i class="fa-solid fa-key"></i> ID: <span>4w6J-XaAR</span>
+            </div>
+            <p class="cert-date"><i class="fa-regular fa-calendar"></i> Mar 16, 2026</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- Achievements & Extra-Curricular Panel -->
+      <div class="achieve-banner reveal">
+        <h3><i class="fa-solid fa-trophy"></i> Key Achievements & Event Participations</h3>
+        <div class="achieve-grid-layout">
+          <div class="achieve-card">
+            <div class="ach-icon"><i class="fa-solid fa-user-tie"></i></div>
+            <div>
+              <strong>CEO Conclave Participant</strong>
+              <p>Interacted with industry leaders; gained insights on entrepreneurship, leadership, & emerging tech trends.</p>
             </div>
           </div>
-        </div>
-
-        <!-- Achievements & Extra-Curricular Panel -->
-        <div class="cert-panel">
-          <h3><i class="fa-solid fa-trophy"></i> Participations & Achievements</h3>
-          <ul class="achieve-list">
-            <li>
-              <i class="fa-solid fa-user-tie"></i>
-              <div>
-                <strong>CEO Conclave Participant</strong>
-                <span>Interacted with industry leaders; gained insights on entrepreneurship, leadership, & emerging tech trends.</span>
-              </div>
-            </li>
-            <li>
-              <i class="fa-brands fa-python"></i>
-              <div>
-                <strong>Naukri Python for Data Contest</strong>
-                <span>Demonstrated expertise in Python programming and data analysis techniques.</span>
-              </div>
-            </li>
-            <li>
-              <i class="fa-solid fa-cube"></i>
-              <div>
-                <strong>Devpost 3D Website Hackathon</strong>
-                <span>Contributed to an immersive 3D web application using React and Three.js.</span>
-              </div>
-            </li>
-            <li>
-              <i class="fa-solid fa-hand-holding-heart"></i>
-              <div>
-                <strong>Social Initiative & Volunteering</strong>
-                <span>Volunteer for "Shells, Scientific Exploration" & AWS Pathway to Internship Excellence Workshop participant.</span>
-              </div>
-            </li>
-          </ul>
+          <div class="achieve-card">
+            <div class="ach-icon"><i class="fa-brands fa-python"></i></div>
+            <div>
+              <strong>Naukri Python for Data Contest</strong>
+              <p>Demonstrated expertise in Python programming and data analysis techniques.</p>
+            </div>
+          </div>
+          <div class="achieve-card">
+            <div class="ach-icon"><i class="fa-solid fa-cube"></i></div>
+            <div>
+              <strong>Devpost 3D Website Hackathon</strong>
+              <p>Contributed to an immersive 3D web application using React and Three.js.</p>
+            </div>
+          </div>
+          <div class="achieve-card">
+            <div class="ach-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+            <div>
+              <strong>Social Initiative & Volunteering</strong>
+              <p>Volunteer for "Shells, Scientific Exploration" & AWS Pathway to Internship Excellence Workshop participant.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -705,6 +820,13 @@
           </div>
         </div>
       </div>
+
+      <!-- Send Message Action at End -->
+      <div class="send-message-action-wrap reveal">
+        <button type="button" class="btn primary-btn open-send-msg-btn" id="open-send-msg-bottom-btn">
+          <i class="fa-regular fa-paper-plane"></i> Send Me a Message
+        </button>
+      </div>
     </section>
   </main>
 
@@ -737,6 +859,72 @@
           <i class="fa-brands fa-github"></i> GitHub Repository
         </a>
       </div>
+    </div>
+  </div>
+
+  <!-- Certificate Lightbox Modal (Clean View - No Preview ID or PDF buttons) -->
+  <div class="project-modal cert-viewer-modal" id="cert-modal" aria-hidden="true" role="dialog" aria-labelledby="cert-modal-title">
+    <div class="modal-card cert-modal-card">
+      <button class="modal-close" id="cert-modal-close" type="button" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <span class="section-tag" id="cert-modal-issuer">Issuer</span>
+        <h2 id="cert-modal-title">Certificate Title</h2>
+        <div class="cert-modal-meta">
+          <span class="cert-id-badge" id="cert-modal-id-wrap">
+            <i class="fa-solid fa-key"></i> ID: <strong id="cert-modal-id">---</strong>
+            <button type="button" id="copy-cert-id-btn" class="copy-id-btn" title="Copy Certificate ID"><i class="fa-regular fa-copy"></i></button>
+          </span>
+          <span class="cert-modal-date" id="cert-modal-date"><i class="fa-regular fa-calendar"></i> Date</span>
+        </div>
+      </div>
+      <div class="cert-modal-img-wrap">
+        <img id="cert-modal-img" src="" alt="Certificate Preview" class="cert-modal-img">
+      </div>
+      <div class="modal-footer center-footer">
+        <button type="button" class="btn secondary-btn" id="cert-modal-close-btn">
+          Close Certificate
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Send Message Lightbox Modal -->
+  <div class="project-modal" id="send-message-modal" aria-hidden="true" role="dialog" aria-labelledby="send-msg-modal-title">
+    <div class="modal-card send-msg-modal-card">
+      <button class="modal-close" id="send-msg-modal-close" type="button" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <span class="section-tag"><i class="fa-regular fa-paper-plane"></i> Get In Touch</span>
+        <h2 id="send-msg-modal-title">Send Me a Message</h2>
+        <p class="modal-subtitle">Feel free to reach out for software roles, projects, or technical inquiries.</p>
+      </div>
+      <form class="contact-form modal-form" id="send-message-form">
+        <div class="form-group">
+          <label for="msg-user-name">Your Full Name</label>
+          <input type="text" id="msg-user-name" name="name" placeholder="e.g. John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="msg-user-email">Your Email Address</label>
+          <input type="email" id="msg-user-email" name="email" placeholder="e.g. john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="msg-user-subject">Subject</label>
+          <input type="text" id="msg-user-subject" name="subject" placeholder="e.g. Software Developer Position">
+        </div>
+        <div class="form-group">
+          <label for="msg-user-text">Your Message</label>
+          <textarea id="msg-user-text" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn primary-btn submit-btn" id="send-msg-submit-btn">
+            <i class="fa-regular fa-paper-plane"></i> Send Message
+          </button>
+          <button type="button" class="btn secondary-btn" id="send-msg-modal-cancel">Cancel</button>
+        </div>
+      </form>
     </div>
   </div>
 
